@@ -17,7 +17,7 @@
                     <h3>Room Checkmate Login</h3>
                 </div>
                 <div class="card-body">
-                    <pre>${errorMessage}</pre>
+                    <pre>${message}</pre>
                     <form action="/welcome" method="post">
                         <div class="form-group">
                             <label for="username">Username</label>

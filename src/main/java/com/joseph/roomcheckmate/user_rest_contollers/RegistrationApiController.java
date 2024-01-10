@@ -23,26 +23,18 @@ public class RegistrationApiController {
         return "registration";
     }
 
-    @PostMapping("/registerUser")
-    public String registerNewUser(@RequestParam("first_name") String first_name,
-                                  @RequestParam("last_name") String last_name,
-                                  @RequestParam("email") String email,
-                                  @RequestParam("password") String password,
-                                  ModelMap model) {
-
-//         Encrypt / Hash Password:
-        String hashed_password = BCrypt.hashpw(password, BCrypt.gensalt());
-
-        // Register New User:
-        int result = userService.registerNewUserServiceMethod(first_name, last_name, email, hashed_password);
-
-        if (result != 1) {
-            model.addAttribute("message", "Registration failed");
-            return "registration";
+    @PostMapping("/login")
+    public String loginUser(@RequestParam String email,
+                            @RequestParam String password,
+                            ModelMap model) {
+        if (userService.authenticateUser(email, password)) {
+            // Successful login
+            return "welcomepage";
+        } else {
+            // Invalid credentials
+            model.addAttribute("errorMessage", "Invalid email or password");
+            return "login";
         }
-        model.addAttribute("message", "Registration Successfully please Login");
-        return "registration";
-
     }
 }
 
