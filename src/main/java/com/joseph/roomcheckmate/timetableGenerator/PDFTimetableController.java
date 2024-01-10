@@ -2,7 +2,8 @@ package com.joseph.roomcheckmate.timetableGenerator;
 
 
 import com.joseph.roomcheckmate.models.timetable.Timetable;
-import com.joseph.roomcheckmate.models.timetable.TimetableRepository;
+import com.joseph.roomcheckmate.repository.TimetableRepository;
+import com.joseph.roomcheckmate.service.DatabaseTimetablePDFService;
 import org.springframework.core.io.InputStreamResource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;

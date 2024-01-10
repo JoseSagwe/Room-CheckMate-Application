@@ -1,5 +1,6 @@
-package com.joseph.roomcheckmate.models.room;
+package com.joseph.roomcheckmate.repository;
 
+import com.joseph.roomcheckmate.models.room.Room;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

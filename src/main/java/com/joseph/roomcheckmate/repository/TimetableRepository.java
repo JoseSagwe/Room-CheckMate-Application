@@ -1,6 +1,7 @@
-package com.joseph.roomcheckmate.models.timetable;
+package com.joseph.roomcheckmate.repository;
 
 
+import com.joseph.roomcheckmate.models.timetable.Timetable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

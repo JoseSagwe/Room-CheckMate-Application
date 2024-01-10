@@ -1,7 +1,7 @@
 package com.joseph.roomcheckmate.jpa;
 
 import com.joseph.roomcheckmate.models.room.Room;
-import com.joseph.roomcheckmate.models.room.RoomRepository;
+import com.joseph.roomcheckmate.repository.RoomRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;

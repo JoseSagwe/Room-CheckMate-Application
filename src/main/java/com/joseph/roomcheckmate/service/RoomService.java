@@ -1,7 +1,9 @@
-package com.joseph.roomcheckmate.models.room;
+package com.joseph.roomcheckmate.service;
 
 
 
+
+import com.joseph.roomcheckmate.models.room.Room;
 
 import java.util.ArrayList;
 import java.util.List;

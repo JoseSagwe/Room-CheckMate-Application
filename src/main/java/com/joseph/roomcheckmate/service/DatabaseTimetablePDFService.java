@@ -1,4 +1,4 @@
-package com.joseph.roomcheckmate.timetableGenerator;
+package com.joseph.roomcheckmate.service;
 
 
 import com.joseph.roomcheckmate.models.timetable.Timetable;
