@@ -18,7 +18,7 @@
                 </div>
                 <div class="card-body">
                     <pre>${message}</pre>
-                    <form action="/welcome" method="post">
+                    <form action="/login" method="post">
                         <div class="form-group">
                             <label for="username">Username</label>
                             <input type="text" class="form-control" id="username" name="username">
