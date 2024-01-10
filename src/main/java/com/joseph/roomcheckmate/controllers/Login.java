@@ -15,10 +15,7 @@ public class Login {
         this.authenticationService = authenticationService;
     }
 
-    @RequestMapping(value = "/login", method = RequestMethod.GET)
-    public String login(){
-        return "login";
-    }
+
 
     @RequestMapping(value = "/welcome", method = {RequestMethod.GET, RequestMethod.POST})
     public String gotoWelcome(@RequestParam String username, @RequestParam String password, ModelMap model ){

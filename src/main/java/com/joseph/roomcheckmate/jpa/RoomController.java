@@ -17,10 +17,7 @@ public class RoomController {
         this.roomRepository = roomRepository;
     }
 
-    @GetMapping(value = "/register")
-    public String registration(){
-        return "registration";
-    }
+
     @GetMapping("/home")
     public String goHome() {
         return "welcomepage";

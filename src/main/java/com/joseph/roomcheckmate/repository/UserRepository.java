@@ -1,13 +1,15 @@
 package com.joseph.roomcheckmate.repository;
 
+import com.joseph.roomcheckmate.models.User;
 import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UserRepository {
+public interface UserRepository extends CrudRepository<User, Integer> {
 
     @Transactional
     @Modifying
