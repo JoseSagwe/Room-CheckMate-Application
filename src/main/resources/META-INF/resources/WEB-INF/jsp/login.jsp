@@ -17,11 +17,11 @@
                     <h3>Room Checkmate Login</h3>
                 </div>
                 <div class="card-body">
-                    <pre>${message}</pre>
+                    <pre>${errorMessage}</pre>
                     <form action="/login" method="post">
                         <div class="form-group">
-                            <label for="username">Username</label>
-                            <input type="text" class="form-control" id="username" name="username">
+                            <label for="username">Email</label>
+                            <input type="text" class="form-control" id="username" name="email">
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>
