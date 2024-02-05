@@ -15,7 +15,6 @@ public class TimetableController {
 
     @Autowired
     private TimetableRepository timetableRepository;
-
     public TimetableController(TimetableRepository timetableRepository) {
         this.timetableRepository = timetableRepository;
     }
@@ -31,12 +30,14 @@ public class TimetableController {
     }
 
 
+
 //    @PostMapping("/getTimetable")
 //    public String getTimetable(ModelMap model, @RequestParam String program, @RequestParam String time, @RequestParam String weekday) {
 //        List<Timetable> timetable = timetableRepository.findByProgramAndTimeAndWeekDay(program, time, weekday);
 //        model.addAttribute("timetable", timetable);
 //        return "timetableList";
 //    }
+
 
 
     @PostMapping("/getTimetable")

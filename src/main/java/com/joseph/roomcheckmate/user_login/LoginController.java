@@ -17,10 +17,12 @@ public class LoginController {
         this.loginService = loginService;
     }
 
+
     @RequestMapping("/login")
     public String login() {
         return "login";
     }
+
 
     @PostMapping("/login")
     public String loginUser(@RequestParam String email,
