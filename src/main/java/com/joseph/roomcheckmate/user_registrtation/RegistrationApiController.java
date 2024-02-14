@@ -23,6 +23,7 @@ public class RegistrationApiController {
         return "registration";
     }
 
+
     @PostMapping("/registerUser")
     public String registerNewUser(@RequestParam("first_name") String first_name,
                                   @RequestParam("last_name") String last_name,
@@ -42,6 +43,7 @@ public class RegistrationApiController {
         }
         model.addAttribute("message", "Registration Successfully please Login");
         return "registration";
+
 
     }
 }

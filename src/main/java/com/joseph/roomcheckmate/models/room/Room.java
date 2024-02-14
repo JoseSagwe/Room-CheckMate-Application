@@ -7,7 +7,6 @@ import jakarta.persistence.*;
 public class Room {
     public Room() {
     }
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer Id;
