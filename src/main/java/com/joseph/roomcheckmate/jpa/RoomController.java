@@ -10,13 +10,10 @@ import java.util.List;
 
 @Controller
 public class RoomController {
-
     private final RoomRepository roomRepository;
-
     public RoomController(RoomRepository roomRepository) {
         this.roomRepository = roomRepository;
     }
-
 
     @GetMapping("/home")
     public String goHome() {
@@ -87,7 +84,6 @@ public class RoomController {
     public String findTimetable() {
         return "timetables";
     }
-
     @GetMapping("/roomBooking")
     public String roomBooking() {
         return "roomBooking";

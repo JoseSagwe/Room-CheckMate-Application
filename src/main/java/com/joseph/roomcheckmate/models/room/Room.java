@@ -17,7 +17,6 @@ public class Room {
     private int capacity;
     private String status;
 
-
     public Room(Integer id, String block, String roomNumber, String weekDay, String time, int capacity, String status) {
         Id = id;
         this.block = block;
