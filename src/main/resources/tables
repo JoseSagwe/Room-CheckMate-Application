@@ -1,0 +1,34 @@
+-- Create USERS table
+CREATE TABLE USERS (
+    user_id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    email VARCHAR(100),
+    password VARCHAR(100)
+);
+
+-- Create room table
+CREATE TABLE room (
+    room_id INT AUTO_INCREMENT PRIMARY KEY,
+    block VARCHAR(10),
+    room_number INT,
+    week_day VARCHAR(15),
+    time TIME,
+    capacity INT,
+    status VARCHAR(20)
+);
+
+-- Create timetable table
+CREATE TABLE timetable (
+    timetable_id INT AUTO_INCREMENT PRIMARY KEY,
+    week_day VARCHAR(15),
+    unit_code VARCHAR(20),
+    unit_name VARCHAR(100),
+    lecture VARCHAR(100),
+    venue VARCHAR(100),
+    time TIME,
+    program VARCHAR(100),
+    school VARCHAR(100),
+    department VARCHAR(100),
+    academic_year VARCHAR(20)
+);
